@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YboRolvest.nl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="/css/style.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-bg">
+        <iframe class="bg-item" src="https://player.vimeo.com/video/829777708?h=d74907a4fc?background=1&muted=1&autoplay=1&controls=0" frameborder="0"></iframe>
+    </div>
+    <nav>
+        <div class="top-bar">
+            <span class="item">YboRolvest</span>
+            <span class="item">File</span>
+            <span class="item">Edit</span>
+            <span class="item">Help</span>
+            <span class="spacer"></span>
+            <span class="item" id="date"></span>
+            <span class="item" id="time"></span>
+        </div>
+    </nav>
+    <main class="desktop crt">
+        <div class="scanline"></div>
+        <section id="applications">
+            <div class="desktop-icon" data-window-id="contact" data-title="contact"><img src=""></div>
+            <div class="desktop-icon" data-title="about"><img src=""></div>
+            <div class="desktop-icon" data-title="things i made"><img src="/img/win98icons/directory_closed-0.png"></div>
+            <div class="desktop-icon" data-window-id="spinfish" data-title="spin.fish"><img src="/img/icons/spinfish.webp"></div>
+            <div class="desktop-icon" data-title="new folder (3)"><img src="/img/win98icons/directory_closed-0.png"></div>
+        </section>
+        <section id="contact" class="hidden window draggable">
+            <div class="window-buttons">
+                <a class="close-button" data-window-id="contact"></a>
+                <span class="topbartexture"></span>
+                <p>Contact</p>
+                <span class="topbartexture"></span>
+                </div>
+            </div>
+            <div class="window-inner">
+            </div>
+        </section>
+        <section id="spinfish" class="hidden window draggable">
+            <div class="window-buttons">
+                <a class="close-button" data-window-id="spinfish"></a>
+                <span class="topbartexture"></span>
+                <p>Spin.Fish</p>
+                <span class="topbartexture"></span>
+                </div>
+            </div>
+            <div class="window-inner">
+                <iframe src="https://spin.fish/" width="100%" height="600px"></iframe>
+            </div>
+        </section>
+    </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+    <script src="/js/silly.media.js"></script>
+</body>
+</html>
