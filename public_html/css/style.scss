@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 @import "pixel-borders-mixins";
 
+
+
 @font-face {
     font-family: 'ChicagoFLF';
     src: url('ChicagoFLF.woff2') format('woff2'),
@@ -11,10 +13,14 @@
     font-display: swap;
 }
 
+// variables
+
+$windows: 6;
+
 :root {
    --window-border-color: black;
    --window-background: lightgray;
-   --window-topbar-background: rgb(220, 253, 197);
+   --window-topbar-background: #ddd;
    --video-width: 100vw;
    --video-height: 100vh;
 }
@@ -82,9 +88,11 @@ body {
             flex-grow: 1;
 }
 .window {
+    border-radius: 4px 4px 4px 4px;
+    -webkit-transition: opacity 300ms ease-in;
+    -o-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
     position: absolute;
-    top: 10%;
-    left: 25%;
     opacity: 1;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -106,6 +114,7 @@ body {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
     &-buttons {
+        border-radius: 4px 4px 0 0;
         height: 24px;
         min-width: 24px;
         background: var(--window-topbar-background);
@@ -120,6 +129,8 @@ body {
             -ms-flex-align: center;
                 align-items: center;
         padding: 0 12px;
+        -webkit-box-shadow: inset 0 1px 0 0 #eee,inset 0 -1px 0 0 #bbb,0 10px 20px 0 rgba(0,0,0,.06);
+                box-shadow: inset 0 1px 0 0 #eee,inset 0 -1px 0 0 #bbb,0 10px 20px 0 rgba(0,0,0,.06);
     }
     &-inner {
         min-width: 300px;
@@ -128,6 +139,13 @@ body {
     }
     -webkit-filter: drop-shadow(8px 8px 12px rgba(0,0,0,.25));
             filter: drop-shadow(8px 8px 12px rgba(0,0,0,.25));
+    
+    @for $i from 1 through $windows {
+        &:nth-of-type(#{$i}) {
+            left: 2rem * $i;
+            top: 2rem * $i;
+        }
+    }
 }
 .topbartexture {
     background-image: url('/img/border.svg');
@@ -186,7 +204,6 @@ body {
 }
 .hidden {
     opacity: 0;
-    display: none;
 }
 #spinfish iframe {
     max-width: 80vw;

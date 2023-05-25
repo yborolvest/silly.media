@@ -38,11 +38,17 @@ $(document).ready(function() {
 $('.close-button').click(function() {
     var window_id = $(this).attr('data-window-id');
     $('#'+window_id).addClass('hidden');
+    setTimeout(function(){
+        $('#'+window_id).css('display','none') 
+    }, 300);
 });
 
 $('.desktop-icon').click(function() {
     var window_id = $(this).attr('data-window-id');
-    $('#'+window_id).removeClass('hidden');
+    $('#'+window_id).css('display','block');
+    setTimeout(function() {
+        $('#'+window_id).removeClass('hidden')
+    }, 50);
 });
 
 var main = document.querySelector('main'),
