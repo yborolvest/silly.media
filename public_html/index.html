@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>YboRolvest | Web & Motion</title>
     <meta name="description" content="I create nice things. Websites, videos, motion graphics and more.">
@@ -12,19 +13,20 @@
     <meta name="author" content="Yvo Rolefes">
     <!-- opengraph -->
     <meta property="og:title" content="YboRolvest | Web & Motion" />
-    <meta property="og:url" content="https://yborolvest.nl/"/>
-    <meta property="og:locale" content="en_GB"/>
-    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://yborolvest.nl/" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
     <meta property="og:description" content="I create nice things. Websites, videos, motion graphics and more.">
     <meta property="og:image" content="https://yborolvest.nl/img/ybo_og_square.jpg" />
     <!-- twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@yborolvest" />
     <meta name="twitter:title" content="YboRolvest | Web & Motion" />
-    <meta name="twitter:description" content="I create nice things. Websites, videos, motion graphics and more."/>
+    <meta name="twitter:description" content="I create nice things. Websites, videos, motion graphics and more." />
     <meta name="twitter:image" content="https://yborolvest.nl/img/ybo_og.jpg" />
 
 </head>
+
 <body>
     <div class="page-bg">
         <img class="bg-item" src="/img/almelo_drone.JPG">
@@ -44,21 +46,10 @@
         <div class="scanline"></div>
         <section id="applications">
             <div class="desktop-icon" data-window-id="contact" data-title="contact"><img src="/img/win98icons/envelope_open_sheet-0.png"></div>
-            <div class="desktop-icon" data-title="about"><img src="/img/win98icons/file_lines-0.png"></div>
-            <div class="desktop-icon" data-title="things i made"><img src="/img/win98icons/directory_closed-0.png"></div>
+            <div class="desktop-icon" data-window-id="about" data-title="about"><img src="/img/win98icons/file_lines-0.png"></div>
+            <div class="desktop-icon" data-window-id="portfolio" data-title="things i made"><img src="/img/win98icons/directory_closed-0.png"></div>
             <div class="desktop-icon" data-window-id="spinfish" data-title="spin.fish"><img src="/img/icons/spinfish.webp"></div>
             <div class="desktop-icon" data-title="new folder (3)"><img src="/img/win98icons/directory_closed-0.png"></div>
-        </section>
-        <section id="contact" class="hidden window draggable" style="display: none;">
-            <div class="window-buttons">
-                <a class="close-button" data-window-id="contact"></a>
-                <span class="topbartexture"></span>
-                <p>Contact</p>
-                <span class="topbartexture"></span>
-                </div>
-            </div>
-            <div class="window-inner">
-            </div>
         </section>
         <section id="spinfish" class="hidden window draggable" style="display: none;">
             <div class="window-buttons">
@@ -66,16 +57,108 @@
                 <span class="topbartexture"></span>
                 <p>Spin.Fish</p>
                 <span class="topbartexture"></span>
-                </div>
             </div>
-            <div class="window-inner">
+            </div>
+            <div class="window-inner flex-column">
                 <iframe src="https://spin.fish/" width="100%" height="600px"></iframe>
+                <a rel="external" href="https://spin.fish/" target="_blank" title="OPEN > Spin.Fish; TAB NEW;">Open
+                    spin.fish in a different window</a>
+            </div>
+        </section>
+        <section id="about" class="hidden window draggable" style="display: none;">
+            <div class="window-buttons">
+                <a class="close-button" data-window-id="about"></a>
+                <span class="topbartexture"></span>
+                <p>About</p>
+                <span class="topbartexture"></span>
+            </div>
+            </div>
+            <div class="window-inner flex-column">
+                <h2>About YboRolvest</h2>
+                <p>I'm YboRolvest, also known as Yvo Rolefes. I'm a Dutch Media designer, officially all-round but nowadays specialised in Webdesign and Motion Graphics design. <br />These skills are supported by a love of video-editing and graphic design. Together with a hobby in photo- and videography, I always try to create (self-described) nice things.</p>
+                <h3>This is me</h3>
+                <div class="flex-row">
+                    <div class="m-r desktop-icon" data-window-id="yborolvestjpg" data-title="yborolvest.jpg"><img src="/img/ybo.jpg"></div>
+                    <div class="m-r desktop-icon" data-window-id="yborolvestjpg2" data-title="yborolvest(2).jpg"><img src="/img/ybo_wild.jpg"></div>
+                </div>
+                <h3>Want to get in touch? <span class="desktop-icon" data-window-id="contact">>> CLICK HERE <<</span></h3>
+            </div>
+        </section>
+
+        <section id="yborolvestjpg" class="hidden window draggable" style="display: none;">
+            <div class="window-buttons">
+                <a class="close-button" data-window-id="yborolvestjpg"></a>
+                <span class="topbartexture"></span>
+                <p>yborolvest.jpg</p>
+                <span class="topbartexture"></span>
+            </div>
+            </div>
+            <div class="window-inner flex-column">
+                <img src="/img/ybo.jpg" alt="Image of YboRolvest" style="max-width: 400px;">
+            </div>
+        </section>
+
+        <section id="yborolvestjpg2" class="hidden window draggable" style="display: none;">
+            <div class="window-buttons">
+                <a class="close-button" data-window-id="yborolvestjpg2"></a>
+                <span class="topbartexture"></span>
+                <p>yborolvest(2).jpg</p>
+                <span class="topbartexture"></span>
+            </div>
+            </div>
+            <div class="window-inner flex-column">
+                <img src="/img/ybo_wild.jpg" alt="Image of YboRolvest" style="max-width: 400px;">
+            </div>
+        </section>
+
+        <section id="contact" class="hidden window draggable" style="display: none;">
+            <div class="window-buttons">
+                <a class="close-button" data-window-id="contact"></a>
+                <span class="topbartexture"></span>
+                <p>Contact</p>
+                <span class="topbartexture"></span>
+            </div>
+            </div>
+            <div class="window-inner flex-column">
+                <h2>Message me!</h2>
+                <div class="flex-row">
+                    <a href="https://wa.me/31649790059" target="_blank" class="desktop-icon" data-title="Whatsapp"><img src="/img/icons/whapp.png"></a>
+                    <a href="https://twitter.com/yborolvest" target="_blank" class="desktop-icon" data-title="Twitter"><img src="/img/icons/twitter.png"></a>
+                    <a href="mailto:ybo@yborolvest.nl" target="_blank" class="desktop-icon" data-title="email"><img src="/img/win98icons/envelope_closed-0.png"></a>
+                </div>
+                <!-- <form id="contactForm" method="post" action="">
+                    <h3>Or use this form</h3>
+    
+                    <div class="input-group">
+                        <input type="text" name="name" value="" placeholder="Your name">
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" value="" placeholder="Your email">
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" placeholder="Type message..."></textarea>
+                    </div>
+                    <input type="hidden" name="submit_frm" value="1">
+
+                    <button class="g-recaptcha" data-sitekey="6LdCwTwmAAAAAKYa67PSDmroBIHKTjiXFH3I84_l"
+                        data-callback='onSubmit' data-action='submit'>Submit</button>
+                </form> -->
             </div>
         </section>
     </main>
     </div>
+    <div class="g-recaptcha" data-sitekey="6LdCwTwmAAAAAKYa67PSDmroBIHKTjiXFH3I84_l">
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
     <script src="/js/silly.media.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
 </body>
+
 </html>

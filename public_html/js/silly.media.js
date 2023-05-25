@@ -10,29 +10,27 @@ $(document).ready(function() {
   
   function clockUpdate() {
     var date = new Date();
-    function addZero(x) {
-      if (x < 10) {
-        return x = '0' + x;
-      } else {
-        return x;
-      }
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
     }
-  
-    function twelveHour(x) {
-      if (x > 12) {
-        return x = x - 12;
-      } else if (x == 0) {
-        return x = 12;
-      } else {
-        return x;
-      }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
     }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + " " + session;
   
-    var h = addZero(twelveHour(date.getHours()));
-    var m = addZero(date.getMinutes());
-    var s = addZero(date.getSeconds());
-  
-    $('#time').text(h + ':' + m + ':' + s)
+    $('#time').text(time)
 }
 
 $('.close-button').click(function() {
