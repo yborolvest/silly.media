@@ -1,14 +1,42 @@
 <?php
-$privatekey = "6LdCwTwmAAAAAG0lI620dGAncSBxc8RwnCFEl5aK";
-$resp = recaptcha_check_answer($privatekey,
-                                $_SERVER["REMOTE_ADDR"],
-                                $_POST["recaptcha_challenge_field"],
-                                $_POST["recaptcha_response_field"]);
 
-if (!$resp->is_valid) {
-    die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
-         "(reCAPTCHA said: " . $resp->error . ")");
+define("RECAPTCHA_V3_SECRET_KEY", '6LdCwTwmAAAAAG0lI620dGAncSBxc8RwnCFEl5aK');
+
+if (isset($_POST['email']) && $_POST['email']) {
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 } else {
+    // set error message and redirect back to form...
+
+    header('location: https://yborolvest.nl/');
+
+    exit;
+
+}
+
+$token = $_POST['token'];
+$action = $_POST['action'];
+
+// call curl to POST request
+
+$ch = curl_init();
+
+curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('secret' => RECAPTCHA_V3_SECRET_KEY, 'response' => $token)));
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+$response = curl_exec($ch);
+
+curl_close($ch);
+
+$arrResponse = json_decode($response, true);
+
+// verify the response
+
+if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
+
+    // valid submission
+
     $errors = '';
     $myemail = 'ybo@yborolvest.nl';
     if(empty($_POST['name'])  || 
@@ -42,7 +70,17 @@ if (!$resp->is_valid) {
 
     header('Location: https://yborolvest.nl/?email=succes');
 
-    }
+}
+
+} else {
+
+    // spam submission
+
+    header('Location: https://yborolvest.nl/?email=fail');
+
 }
 
 
+
+
+    
