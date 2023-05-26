@@ -1,3 +1,16 @@
+//mailconfirm
+$( document ).ready(function() {
+    
+    if (window.location.search === '?email=succes') {
+        var window_id = 'emailConfirm';
+        $('#'+window_id).css('display','block');
+            setTimeout(function() {
+        $('#'+window_id).removeClass('hidden')
+        }, 50);
+    }
+});
+
+
 var $draggable = $('.draggable').draggabilly({
     containment: '.desktop',
     handle: '.window-buttons'
@@ -81,3 +94,4 @@ function animate() {
 	snow(ctx);
 	frame = requestAnimationFrame(animate);
 };
+

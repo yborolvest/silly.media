@@ -141,10 +141,25 @@
                         <textarea name="message" placeholder="Your message"></textarea>
                     </div>
                     <input type="hidden" name="submit_frm" value="1">
+                    <p>This site is protected by reCAPTCHA and <br>the Google
+                    <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
 
                     <button class="g-recaptcha button" data-sitekey="6LdCwTwmAAAAAKYa67PSDmroBIHKTjiXFH3I84_l"
                         data-callback='onSubmit' data-action='submit'>Submit</button>
                 </form>
+            </div>
+        </section>
+        <section id="emailConfirm" class="hidden window draggable" style="display: none; top:40%; left: 40%;">
+            <div class="window-buttons">
+                <a class="close-button" data-window-id="emailConfirm"></a>
+                <span class="topbartexture"></span>
+                <p class="window-title">Spin.Fish</p>
+                <span class="topbartexture"></span>
+            </div>
+            </div>
+            <div class="window-inner flex-column">
+                <iframe src="https://embed.lottiefiles.com/animation/87580"></iframe>
             </div>
         </section>
     </main>
@@ -160,6 +175,14 @@
         function onSubmit(token) {
             document.getElementById("demo-form").submit();
         }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WSWMBSYT3D"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WSWMBSYT3D');
     </script>
 </body>
 
