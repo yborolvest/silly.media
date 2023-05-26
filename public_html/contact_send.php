@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>...</p>
 <?php
 
 define("RECAPTCHA_V3_SECRET_KEY", '6LdCwTwmAAAAAG0lI620dGAncSBxc8RwnCFEl5aK');
@@ -78,9 +88,7 @@ if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrRe
 
     header('Location: https://yborolvest.nl/?email=fail');
 
-}
-
-
-
-
+} ?>
     
+</body>
+</html>
