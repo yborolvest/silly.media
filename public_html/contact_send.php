@@ -1,5 +1,18 @@
 <?php
-$errors = '';
+
+
+$privatekey = "6LdCwTwmAAAAAG0lI620dGAncSBxc8RwnCFEl5aK";
+  $resp = recaptcha_check_answer ($privatekey,
+                                $_SERVER["REMOTE_ADDR"],
+                                $_POST["recaptcha_challenge_field"],
+                                $_POST["recaptcha_response_field"]);
+
+  if (!$resp->is_valid) {
+    // What happens when the CAPTCHA was entered incorrectly
+    die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
+         "(reCAPTCHA said: " . $resp->error . ")");
+  } else {
+    $errors = '';
 $myemail = 'ybo@yborolvest.nl';
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
@@ -35,3 +48,6 @@ mail($to,$email_subject,$email_body,$headers);
 header('Location: https://yborolvest.nl/?email=succes');
 
 }
+  }
+  ?>
+
