@@ -151,6 +151,7 @@ body {
     &:hover {
         cursor:pointer;
     }
+    white-space: nowrap;
 }
 .topbartexture {
     background-image: url('/img/border.svg');

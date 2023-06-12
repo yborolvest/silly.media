@@ -215,6 +215,10 @@ body {
   top: 12rem;
 }
 
+.window-title {
+  white-space: nowrap;
+}
+
 .window-title:hover {
   cursor: pointer;
 }
