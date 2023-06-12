@@ -68,7 +68,7 @@ if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrRe
     if( empty($errors))
     {
     $to = $myemail;
-    $email_subject = "Contact form submission: $name";
+    $email_subject = "Contact form: $name";
     $email_body = "You have received a new message. ".
     " Here are the details:\n Name: $name \n ".
     "Email: $email_address\n Message \n $message";
@@ -78,7 +78,7 @@ if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrRe
     mail($to,$email_subject,$email_body,$headers);
 
 
-    header('Location: https://yborolvest.nl/?email=succes');
+    header('Location: https://yborolvest.nl/?email=success');
 
 }
 

@@ -1,7 +1,7 @@
 //mailconfirm
 $( document ).ready(function() {
     
-    if (window.location.search === '?email=succes') {
+    if (window.location.search === '?email=success') {
         var window_id = 'emailConfirm';
         $('#'+window_id).css('display','block');
             setTimeout(function() {
