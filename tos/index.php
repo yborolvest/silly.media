@@ -52,11 +52,11 @@
             <div class="desktop-icon" data-title="new folder (3)"><img src="/img/win98icons/directory_closed-0.png"></div>
         </section>
 
-        <section id="emailConfirm" class="hidden window draggable" style="display: none; top:40%; left: 40%;">
+        <section id="tos" class="hidden window draggable" style="display: none; top:40%; left: 40%;">
             <div class="window-buttons">
-                <a class="close-button" data-window-id="emailConfirm"></a>
+                <a class="close-button" data-window-id="tos"></a>
                 <span class="topbartexture"></span>
-                <p class="window-title">Spin.Fish</p>
+                <p class="window-title">Terms and Conditions</p>
                 <span class="topbartexture"></span>
             </div>
             <div class="window-inner flex-column">
