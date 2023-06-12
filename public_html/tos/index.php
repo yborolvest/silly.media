@@ -45,14 +45,10 @@
     <main class="desktop crt">
         <div class="scanline"></div>
         <section id="applications">
-            <div class="desktop-icon" data-window-id="contact" data-title="contact"><img src="/img/win98icons/envelope_open_sheet-0.png"></div>
-            <div class="desktop-icon" data-window-id="about" data-title="about"><img src="/img/win98icons/file_lines-0.png"></div>
-            <div class="desktop-icon" data-window-id="portfolio" data-title="things i made"><img src="/img/win98icons/directory_closed-0.png"></div>
-            <div class="desktop-icon" data-window-id="spinfish" data-title="spin.fish"><img src="/img/icons/spinfish.webp"></div>
-            <div class="desktop-icon" data-title="new folder (3)"><img src="/img/win98icons/directory_closed-0.png"></div>
+            <div class="desktop-icon" data-window-id="contact" data-title="Back to Home"><img src="/img/win98icons/envelope_open_sheet-0.png"></div>
         </section>
 
-        <section id="tos" class="hidden window draggable" style="display: none; top:40%; left: 40%;">
+        <section id="tos" class="window draggable" style="display: none; top:40%; left: 40%;">
             <div class="window-buttons">
                 <a class="close-button" data-window-id="tos"></a>
                 <span class="topbartexture"></span>
