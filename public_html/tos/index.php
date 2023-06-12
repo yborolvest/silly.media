@@ -48,7 +48,7 @@
             <div class="desktop-icon" data-window-id="contact" data-title="Back to Home"><img src="/img/win98icons/envelope_open_sheet-0.png"></div>
         </section>
 
-        <section id="tos" class="window draggable" style="display: none; top:40%; left: 40%;">
+        <section id="tos" class="window draggable" style="top:40%; left: 40%;">
             <div class="window-buttons">
                 <a class="close-button" data-window-id="tos"></a>
                 <span class="topbartexture"></span>
