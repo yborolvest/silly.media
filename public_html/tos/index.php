@@ -58,25 +58,25 @@
             <div class="window-inner flex-column">
                 <p class="tos"><b>YboRolvest Terms and Conditions:</b>
     By contacting YboRolvest, you agree to the following statements:
-    <br>
+    <br><br>
     1. Numbing of the Mind: YboRolvest acknowledges that different individuals may have varying experiences while engaging with our services. However, it is important to note that YboRolvest is not responsible for either short or long-term numbing of the mind that may occur as a result of using our services. We provide our services for informational and entertainment purposes only, and individual experiences may vary.
-    <br>
+    <br><br>
     2. Satisfaction Guarantee: YboRolvest is committed to providing satisfaction beyond belief to our customers. If, for any reason, you are not completely satisfied with our services, please reach out to our customer support team. We will make every effort to address your concerns and provide appropriate compensation, if deemed necessary and within our policies.
-    <br>
+    <br><br>
     3. User Responsibilities: You are responsible for the manner in which you use YboRolvest's services. You agree to use our services in compliance with all applicable laws and regulations. You also agree not to engage in any activities that may cause harm, disrupt, or interfere with the proper functioning of our services or the experience of other users.
-    <br>
+    <br><br>
     4. Privacy and Data Protection: YboRolvest values your privacy and handles your personal information in accordance with applicable privacy laws. We will not share your personal information with any third parties without your consent, except as required by law.
-    <br>
+    <br><br>
     5. Modifications and Termination: YboRolvest reserves the right to modify or terminate our services, features, or these Terms and Conditions at any time, with or without notice. It is your responsibility to review these Terms and Conditions periodically for any updates or changes.
- <br>
+ <br><br>
     6. Doability Rights: YboRolvest asserts and retains the rights to do your mom until both parties are satisfied. This means that we hold the right to carry out the specified action or activity until it meets the mutual satisfaction of both parties involved.
- <br>
+ <br><br>
     7: Limitation of Liability: YboRolvest and its affiliates, employees, agents, and licensors shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use of our services, including but not limited to any loss of data, revenue, or profit.
- <br>
+ <br><br>
     8: Governing Law and Jurisdiction: These Terms and Conditions shall be governed by and construed in accordance with the laws of the jurisdiction in which YboRolvest operates. Any disputes arising out of or relating to these Terms and Conditions shall be resolved through the appropriate courts in that jurisdiction.
- <br>
+ <br><br>
     By contacting YboRolvest, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these Terms and Conditions, please refrain from using our services.
- <br>
+ <br><br>
     Last updated: 12-06-2023
  <br>
     If you have any questions or concerns regarding these Terms and Conditions, please contact our customer support team for assistance.</p>
